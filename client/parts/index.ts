@@ -1,1 +1,5 @@
-export * from './system/index-page.component';
+//页面
+export * from './system/pages/index';
+
+//组件
+

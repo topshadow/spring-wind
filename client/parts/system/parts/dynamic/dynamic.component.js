@@ -9,17 +9,18 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var AppComponent = (function () {
-    function AppComponent() {
+var SystemDynamicComponent = (function () {
+    function SystemDynamicComponent() {
     }
-    AppComponent = __decorate([
+    SystemDynamicComponent = __decorate([
         core_1.Component({
-            selector: 'my-app',
-            template: "\n        <router-outlet>\n        </router-outlet>\n    "
+            moduleId: module.id,
+            selector: 'system-dynamic',
+            templateUrl: './dynamic.component.html'
         }), 
         __metadata('design:paramtypes', [])
-    ], AppComponent);
-    return AppComponent;
+    ], SystemDynamicComponent);
+    return SystemDynamicComponent;
 }());
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+exports.SystemDynamicComponent = SystemDynamicComponent;
+//# sourceMappingURL=dynamic.component.js.map

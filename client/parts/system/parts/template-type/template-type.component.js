@@ -9,17 +9,18 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var AppComponent = (function () {
-    function AppComponent() {
+var SystemTemplateTypeComponent = (function () {
+    function SystemTemplateTypeComponent() {
     }
-    AppComponent = __decorate([
+    SystemTemplateTypeComponent = __decorate([
         core_1.Component({
-            selector: 'my-app',
-            template: "\n        <router-outlet>\n        </router-outlet>\n    "
+            moduleId: module.id,
+            selector: 'system-template-type',
+            templateUrl: './template-type.component.html'
         }), 
         __metadata('design:paramtypes', [])
-    ], AppComponent);
-    return AppComponent;
+    ], SystemTemplateTypeComponent);
+    return SystemTemplateTypeComponent;
 }());
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+exports.SystemTemplateTypeComponent = SystemTemplateTypeComponent;
+//# sourceMappingURL=template-type.component.js.map

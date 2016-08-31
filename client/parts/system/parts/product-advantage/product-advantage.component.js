@@ -9,17 +9,18 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var AppComponent = (function () {
-    function AppComponent() {
+var SystemProductAdvantageComponent = (function () {
+    function SystemProductAdvantageComponent() {
     }
-    AppComponent = __decorate([
+    SystemProductAdvantageComponent = __decorate([
         core_1.Component({
-            selector: 'my-app',
-            template: "\n        <router-outlet>\n        </router-outlet>\n    "
+            moduleId: module.id,
+            selector: 'system-product-advantage',
+            templateUrl: './product-advantage.html'
         }), 
         __metadata('design:paramtypes', [])
-    ], AppComponent);
-    return AppComponent;
+    ], SystemProductAdvantageComponent);
+    return SystemProductAdvantageComponent;
 }());
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+exports.SystemProductAdvantageComponent = SystemProductAdvantageComponent;
+//# sourceMappingURL=product-advantage.component.js.map

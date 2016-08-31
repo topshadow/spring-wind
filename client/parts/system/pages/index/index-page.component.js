@@ -9,17 +9,22 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var AppComponent = (function () {
-    function AppComponent() {
+var index_1 = require('../../parts/index');
+var SystemIndexPageComponent = (function () {
+    function SystemIndexPageComponent() {
     }
-    AppComponent = __decorate([
+    SystemIndexPageComponent = __decorate([
         core_1.Component({
-            selector: 'my-app',
-            template: "\n        <router-outlet>\n        </router-outlet>\n    "
+            moduleId: module.id,
+            selector: 'index-page',
+            templateUrl: './index-page.html',
+            directives: [index_1.SystemNavComponent, index_1.SystemBannerComponent, index_1.SystemFooterComponent,
+                index_1.SystemProductAdvantageComponent, index_1.SystemCaseComponent, index_1.SystemDynamicComponent],
+            styleUrls: ['./index-page.css']
         }), 
         __metadata('design:paramtypes', [])
-    ], AppComponent);
-    return AppComponent;
+    ], SystemIndexPageComponent);
+    return SystemIndexPageComponent;
 }());
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+exports.SystemIndexPageComponent = SystemIndexPageComponent;
+//# sourceMappingURL=index-page.component.js.map

@@ -9,17 +9,22 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var AppComponent = (function () {
-    function AppComponent() {
+var index_1 = require('../../parts/index');
+var SystemCasePageComponent = (function () {
+    function SystemCasePageComponent() {
     }
-    AppComponent = __decorate([
+    SystemCasePageComponent = __decorate([
         core_1.Component({
-            selector: 'my-app',
-            template: "\n        <router-outlet>\n        </router-outlet>\n    "
+            moduleId: module.id,
+            selector: 'system-case-page',
+            directives: [index_1.SystemNavComponent, index_1.SystemBannerComponent, index_1.SystemTemplateTypeComponent,
+                index_1.SystemCaseDemoComponent,
+                index_1.SystemDynamicComponent, index_1.SystemFooterComponent],
+            templateUrl: './case-page.component.html'
         }), 
         __metadata('design:paramtypes', [])
-    ], AppComponent);
-    return AppComponent;
+    ], SystemCasePageComponent);
+    return SystemCasePageComponent;
 }());
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+exports.SystemCasePageComponent = SystemCasePageComponent;
+//# sourceMappingURL=case-page.component.js.map

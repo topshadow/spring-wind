@@ -4,13 +4,20 @@ var index_1 = require('./parts/index');
 var appRoutes = [
     {
         path: "",
-        redirectTo: "/index",
-        pathMatch: 'full'
+        redirectTo: "/system/index",
+        pathMatch: "full"
     },
     {
-        path: "index",
-        component: index_1.IndexPageComponent,
-        pathMatch: 'full'
+        path: "system/index",
+        component: index_1.SystemIndexPageComponent,
+    },
+    {
+        path: "system/download",
+        component: index_1.SystemDownloadPageComponent
+    },
+    {
+        path: "system/case",
+        component: index_1.SystemCasePageComponent
     }
 ];
 exports.appRoutingProviders = [];

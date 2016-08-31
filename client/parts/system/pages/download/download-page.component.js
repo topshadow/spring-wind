@@ -9,17 +9,22 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var AppComponent = (function () {
-    function AppComponent() {
+var index_1 = require('../../parts/index');
+var SystemDownloadPageComponent = (function () {
+    function SystemDownloadPageComponent() {
     }
-    AppComponent = __decorate([
+    SystemDownloadPageComponent = __decorate([
         core_1.Component({
-            selector: 'my-app',
-            template: "\n        <router-outlet>\n        </router-outlet>\n    "
+            moduleId: module.id,
+            selector: 'system-download-page',
+            directives: [index_1.SystemNavComponent, index_1.SystemBannerComponent,
+                index_1.SystemFooterComponent,
+                index_1.SystemProductAdvantageComponent, index_1.SystemDynamicComponent],
+            templateUrl: './download-page.component.html'
         }), 
         __metadata('design:paramtypes', [])
-    ], AppComponent);
-    return AppComponent;
+    ], SystemDownloadPageComponent);
+    return SystemDownloadPageComponent;
 }());
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+exports.SystemDownloadPageComponent = SystemDownloadPageComponent;
+//# sourceMappingURL=download-page.component.js.map

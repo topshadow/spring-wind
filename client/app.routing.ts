@@ -1,17 +1,24 @@
 import { Routes, RouterModule } from '@angular/router';
-import {IndexPageComponent} from './parts/index';
+import {SystemIndexPageComponent,SystemDownloadPageComponent,SystemCasePageComponent} from './parts/index';
 
 
 const appRoutes: Routes = [
     {
-        path: "",
-        redirectTo: "/index",
-        pathMatch: 'full'
+        path:"",
+        redirectTo:"/system/index",
+        pathMatch:"full"
     },
     {
-        path:"index",
-        component:IndexPageComponent,
-        pathMatch:'full'
+        path:"system/index",
+        component:SystemIndexPageComponent,
+    },
+    {
+        path:"system/download",
+        component:SystemDownloadPageComponent
+    },
+    {
+        path:"system/case",
+        component:SystemCasePageComponent
     }
 
     /*

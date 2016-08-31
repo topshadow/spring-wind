@@ -9,18 +9,20 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var IndexPageComponent = (function () {
-    function IndexPageComponent() {
+var index_1 = require('../../parts/index');
+var SystemTemplatePageComponent = (function () {
+    function SystemTemplatePageComponent() {
     }
-    IndexPageComponent = __decorate([
+    SystemTemplatePageComponent = __decorate([
         core_1.Component({
             moduleId: module.id,
-            selector: 'index-page',
-            templateUrl: './index-page.html'
+            selector: 'system-template-page',
+            directives: [index_1.SystemNavComponent, index_1.SystemBannerComponent, index_1.SystemCaseComponent, index_1.SystemDynamicComponent, index_1.SystemFooterComponent],
+            templateUrl: './template-page.component.html'
         }), 
         __metadata('design:paramtypes', [])
-    ], IndexPageComponent);
-    return IndexPageComponent;
+    ], SystemTemplatePageComponent);
+    return SystemTemplatePageComponent;
 }());
-exports.IndexPageComponent = IndexPageComponent;
-//# sourceMappingURL=index-page.component.js.map
+exports.SystemTemplatePageComponent = SystemTemplatePageComponent;
+//# sourceMappingURL=template-page.component.js.map
