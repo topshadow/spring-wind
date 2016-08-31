@@ -1,5 +1,5 @@
 import * as Express from 'express';
-var mysql = require('promise-mysql');
+
 import con  from '../config/mysql.config';
 
 import db  from '../model/user.model';

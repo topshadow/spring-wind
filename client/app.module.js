@@ -14,13 +14,14 @@ var http_1 = require('@angular/http');
 var platform_browser_1 = require('@angular/platform-browser');
 var router_1 = require('@angular/router');
 var app_component_1 = require('./app.component');
+var app_routing_1 = require('./app.routing');
 var AppModule = (function () {
     function AppModule() {
     }
     AppModule = __decorate([
         core_1.NgModule({
-            imports: [common_1.CommonModule, http_1.HttpModule, platform_browser_1.BrowserModule, router_1.RouterModule],
-            declarations: [],
+            imports: [common_1.CommonModule, http_1.HttpModule, platform_browser_1.BrowserModule, router_1.RouterModule, app_routing_1.routing],
+            declarations: [app_component_1.AppComponent],
             providers: [],
             bootstrap: [app_component_1.AppComponent]
         }), 
