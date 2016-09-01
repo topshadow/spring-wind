@@ -1,6 +1,6 @@
 import { Routes, RouterModule } from '@angular/router';
-import {SystemIndexPageComponent,SystemDownloadPageComponent,SystemCasePageComponent} from './parts/index';
-
+import {SystemIndexPageComponent,SystemDownloadPageComponent,SystemCasePageComponent,SystemTemplatePageComponent} from './parts/index';
+import {ApiTulingPageComponent} from './parts/api/index';
 
 const appRoutes: Routes = [
     {
@@ -19,6 +19,14 @@ const appRoutes: Routes = [
     {
         path:"system/case",
         component:SystemCasePageComponent
+    },
+    {
+        path:"system/template",
+        component:SystemTemplatePageComponent
+    },
+    {
+        path:"api/tuling",
+        component:ApiTulingPageComponent
     }
 
     /*

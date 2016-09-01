@@ -5,4 +5,5 @@ function __export(m) {
 __export(require('./index/index-page.component'));
 __export(require('./download/download-page.component'));
 __export(require('./case/case-page.component'));
+__export(require('./template/template-page.component'));
 //# sourceMappingURL=index.js.map
