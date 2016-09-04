@@ -1,6 +1,6 @@
 import {Component} from '@angular/core';
 import ApiDirective  from '../../index';
-import {ApiTulingStoryComponent} from '../../parts/tuling-story/tuling-story.component';
+import {ApiTulingStoryComponent} from '../../parts/tuling/tuling-story/tuling-story.component';
 
 @Component({
     moduleId:module.id,

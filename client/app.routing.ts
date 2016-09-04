@@ -1,12 +1,20 @@
 import { Routes, RouterModule } from '@angular/router';
 import {SystemIndexPageComponent,SystemDownloadPageComponent,SystemCasePageComponent,SystemTemplatePageComponent} from './parts/index';
 import {ApiTulingPageComponent} from './parts/api/index';
+import {SignInPageComponent,SignUpPageComponent} from './parts/index'
 
 const appRoutes: Routes = [
     {
         path:"",
-        redirectTo:"/system/index",
+        redirectTo:"/sign-in",
         pathMatch:"full"
+    },
+    {
+        path:"sign-in",
+        component:SignInPageComponent
+    },{
+        path:"sign-up",
+        component:SignUpPageComponent
     },
     {
         path:"system/index",

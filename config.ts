@@ -9,7 +9,7 @@ export default {
         * info "讲个笑话" |"今日新闻"|"故事大全"
         * info "成语接龙${成语}"  ,userid:"${user}"
          */
-        ""
+        
     },
     "hefeng": {
         "user": "2121718893@qq.com","password":"704104..",

@@ -9,7 +9,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var tuling_story_component_1 = require('../../parts/tuling-story/tuling-story.component');
+var tuling_story_component_1 = require('../../parts/tuling/tuling-story/tuling-story.component');
 var ApiTulingPageComponent = (function () {
     function ApiTulingPageComponent() {
     }

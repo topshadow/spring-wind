@@ -12,6 +12,8 @@ var EmployeeRoute = Express.Router();
 EmployeeRoute.all('/:action', (req: Express.Request, res: Express.Response, next: Express.NextFunction) => {
     // console.log(req.params['action']);
     switch (req.params['action']) {
+        case "sgin-up":
+        doAction.signUp(req,res);
         case "employees":
             doAction.employees(req, res);
             break;
@@ -44,6 +46,12 @@ var doAction = {
         res.json({
             issuccess:false,
             errorMsg:errorMsg?errorMsg:'not found right action '
+        })
+    },
+    signUp(req:Express.Request,res:Express.Response){
+        res.json({
+            issuccess:true,
+            data:{userid:req.body.userid,passowrd:req.body.password}
         })
     }
 

@@ -1,0 +1,12 @@
+    <div class="container">
+
+      <div class="form-signin" role="form">
+
+        <h2 class="form-signin-heading"><a class="btn btn-default" (click)="history.back()">返回</a>&nbsp;&nbsp;&nbsp;&nbsp; 注册</h2>
+        <input [(ngModel)]="user.userId" type="text" class="form-control" placeholder="用户名" required autofocus>
+        <input [(ngModel)]="user.password" type="password" class="form-control" placeholder="密码" required>
+        <input type="password" class="form-control" placeholder="重复密码" required>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">注册</button>
+      </div>
+
+    </div> <!-- /container -->

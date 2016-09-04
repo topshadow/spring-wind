@@ -2,11 +2,19 @@
 var router_1 = require('@angular/router');
 var index_1 = require('./parts/index');
 var index_2 = require('./parts/api/index');
+var index_3 = require('./parts/index');
 var appRoutes = [
     {
         path: "",
-        redirectTo: "/system/index",
+        redirectTo: "/sign-in",
         pathMatch: "full"
+    },
+    {
+        path: "sign-in",
+        component: index_3.SignInPageComponent
+    }, {
+        path: "sign-up",
+        component: index_3.SignUpPageComponent
     },
     {
         path: "system/index",

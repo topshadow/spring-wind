@@ -9,6 +9,8 @@ exports.EmployeeRoute = EmployeeRoute;
 EmployeeRoute.all('/:action', function (req, res, next) {
     // console.log(req.params['action']);
     switch (req.params['action']) {
+        case "sgin-up":
+            doAction.signUp(req, res);
         case "employees":
             doAction.employees(req, res);
             break;
@@ -39,6 +41,12 @@ var doAction = {
         res.json({
             issuccess: false,
             errorMsg: errorMsg ? errorMsg : 'not found right action '
+        });
+    },
+    signUp: function (req, res) {
+        res.json({
+            issuccess: true,
+            data: { userid: req.body.userid, passowrd: req.body.password }
         });
     }
 };
