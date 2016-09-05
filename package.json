@@ -29,6 +29,7 @@
     "express": "^4.14.0",
     "jquery": "^3.1.0",
     "method-override": "^2.3.6",
+    "mongoose": "^4.6.0",
     "morgan": "^1.7.0",
     "node-mysql": "^0.4.2",
     "reflect-metadata": "^0.1.3",
