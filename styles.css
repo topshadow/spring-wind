@@ -6,7 +6,7 @@ ul li{ list-style-type: none;}
 a{text-decoration: none}
 .carousel-inner img{width: 100%!important;}
 /*header*/
-.main-container{ }
+.main-container{ } 
 .main-color{ color:#4385f5 ;}
 #nav-bg{background: #24547e!important;}
 .sign{float: right; line-height: 40px;padding-top:30px;}
