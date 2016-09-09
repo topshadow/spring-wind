@@ -1,40 +1,43 @@
 import { Routes, RouterModule } from '@angular/router';
-import {SystemIndexPageComponent,SystemDownloadPageComponent,SystemCasePageComponent,SystemTemplatePageComponent} from './parts/index';
+import {SystemIndexPageComponent, SystemDownloadPageComponent, SystemCasePageComponent, SystemTemplatePageComponent} from './parts/index';
 import {ApiTulingPageComponent} from './parts/api/index';
-import {SignInPageComponent,SignUpPageComponent} from './parts/index'
+import {SignInPageComponent, SignUpPageComponent, CodeOnlineComponent} from './parts/index'
 
 const appRoutes: Routes = [
     {
-        path:"",
-        redirectTo:"/sign-in",
-        pathMatch:"full"
+        path: "",
+        redirectTo: "/code-online",
+        pathMatch: "full"
+    }, {
+        path:"code-online",
+        component:CodeOnlineComponent
     },
     {
-        path:"sign-in",
-        component:SignInPageComponent
-    },{
-        path:"sign-up",
-        component:SignUpPageComponent
+        path: "sign-in",
+        component: SignInPageComponent
+    }, {
+        path: "sign-up",
+        component: SignUpPageComponent
     },
     {
-        path:"system/index",
-        component:SystemIndexPageComponent,
+        path: "system/index",
+        component: SystemIndexPageComponent,
     },
     {
-        path:"system/download",
-        component:SystemDownloadPageComponent
+        path: "system/download",
+        component: SystemDownloadPageComponent
     },
     {
-        path:"system/case",
-        component:SystemCasePageComponent
+        path: "system/case",
+        component: SystemCasePageComponent
     },
     {
-        path:"system/template",
-        component:SystemTemplatePageComponent
+        path: "system/template",
+        component: SystemTemplatePageComponent
     },
     {
-        path:"api/tuling",
-        component:ApiTulingPageComponent
+        path: "api/tuling",
+        component: ApiTulingPageComponent
     }
 
     /*

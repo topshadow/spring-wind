@@ -9,6 +9,10 @@ var EmployeeRoute = Express.Router();
  * try parse Int
  */
 
+interface User{
+
+}
+
 EmployeeRoute.all('/:action', (req: Express.Request, res: Express.Response, next: Express.NextFunction) => {
     // console.log(req.params['action']);
     switch (req.params['action']) {
@@ -51,7 +55,7 @@ var doAction = {
     signUp(req:Express.Request,res:Express.Response){
         res.json({
             issuccess:true,
-            data:{userid:req.body.userid,passowrd:req.body.password}
+            data:{userid:req['body'].userid,passowrd:req['body'].password}
         })
     }
 

@@ -8,6 +8,7 @@
 
   <!-- 新 Bootstrap 核心 CSS 文件 -->
   <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="stylesheet" href="resources/css/md1.css">
 
   <!-- 可选的Bootstrap主题文件（一般不用引入） -->
   <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
@@ -17,9 +18,12 @@
 
   <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
   <script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="resources/js/markdown.min.js"></script>
+  <script src="./lib/socket.io/socket.io.js"></script>
+
   <!-- 1. Load libraries -->
   <!-- Polyfill(s) for older browsers -->
-    <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css">
   <script src="node_modules/core-js/client/shim.min.js"></script>
   <script src="node_modules/zone.js/dist/zone.js"></script>
   <script src="node_modules/reflect-metadata/Reflect.js"></script>
@@ -29,11 +33,16 @@
   <script>
       System.import('app').catch(function(err){ console.error(err); });
     </script>
+
 </head>
 <!-- 3. Display the application -->
 
+
 <body>
+
   <my-app>Loading...</my-app>
+
+
 </body>
 
 </html>

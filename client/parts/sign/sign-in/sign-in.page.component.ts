@@ -1,5 +1,9 @@
 import {Component} from '@angular/core';
 import {Base} from '../../../base';
+export interface User{
+    userId:string;
+    password:string;
+}
 
 @Component({
     moduleId: module.id,

@@ -1,6 +1,6 @@
 import {Component} from '@angular/core';
 import {Base} from '../../../base';
-
+import {User} from '../sign-in/sign-in.page.component';
 @Component({
     moduleId:module.id,
     selector:'sign-up',

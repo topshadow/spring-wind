@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import * as $ from 'jquery';
+
 
 
 @Component({
@@ -31,7 +31,7 @@ export class ApiTulingStoryComponent implements OnInit {
         var tempThis = this;
         if ((!this.jokes.length&&!this.selectedJoke) ||
         (this.jokes.indexOf(this.selectedJoke)+1 == this.jokes.length && this.jokes.length != 0)) {
-            $.ajax({
+            window['$'].ajax({
                 method: "POST",
                 url: "http://www.tuling123.com/openapi/api",
                 data: { "key": "e4f269153b7a3e294babe2d6a76399e3", "info": "讲个故事" },

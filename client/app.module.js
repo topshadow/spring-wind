@@ -16,13 +16,14 @@ var router_1 = require('@angular/router');
 var app_component_1 = require('./app.component');
 var forms_1 = require('@angular/forms');
 var app_routing_1 = require('./app.routing');
+var index_1 = require('./parts/index');
 var AppModule = (function () {
     function AppModule() {
     }
     AppModule = __decorate([
         core_1.NgModule({
             imports: [common_1.CommonModule, http_1.HttpModule, platform_browser_1.BrowserModule, router_1.RouterModule, forms_1.FormsModule, app_routing_1.routing],
-            declarations: [app_component_1.AppComponent],
+            declarations: [app_component_1.AppComponent, index_1.default],
             providers: [],
             bootstrap: [app_component_1.AppComponent]
         }), 

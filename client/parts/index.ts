@@ -1,3 +1,5 @@
+//导出对象数组化
+
 //页面
 export * from './system/pages/index';
 
@@ -5,7 +7,9 @@ export * from './system/pages/index';
 
 import {SignInPageComponent} from './sign/sign-in/sign-in.page.component';
 import {SignUpPageComponent} from './sign/sign-up/sign-up.page.component';
-export {SignInPageComponent,SignUpPageComponent}
+import {CodeOnlineComponent} from './code-online/code-online.component';
+export {SignInPageComponent,SignUpPageComponent,CodeOnlineComponent}
+
 
 
 export default [SignInPageComponent,SignUpPageComponent];

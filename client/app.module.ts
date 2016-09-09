@@ -7,10 +7,12 @@ import {AppComponent} from './app.component';
 import {FormsModule} from '@angular/forms';
 import {routing} from './app.routing';
 
+import Parts from './parts/index';
+
 
 @NgModule({
     imports:[CommonModule,HttpModule,BrowserModule,RouterModule,FormsModule,routing],
-    declarations:[AppComponent],
+    declarations:[AppComponent,Parts],
     providers:[],
     bootstrap:[AppComponent]
 })

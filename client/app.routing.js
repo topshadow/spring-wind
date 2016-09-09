@@ -6,8 +6,11 @@ var index_3 = require('./parts/index');
 var appRoutes = [
     {
         path: "",
-        redirectTo: "/sign-in",
+        redirectTo: "/code-online",
         pathMatch: "full"
+    }, {
+        path: "code-online",
+        component: index_3.CodeOnlineComponent
     },
     {
         path: "sign-in",

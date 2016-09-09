@@ -1,11 +1,14 @@
-export class Base{
-    public get  history(){
+
+export abstract class Base {
+    
+    public get history() {
         return window['history'];
-    }  
-    public get $(){
+    }
+      get $() {
+        
         return window['$'];
     }
-    
-    constructor(){}
+
+
 
 }

@@ -9,14 +9,16 @@
     '@angular': 'node_modules/@angular',
     'angular2-in-memory-web-api': 'node_modules/angular2-in-memory-web-api',
     'rxjs': 'node_modules/rxjs',
-    'jquery': 'node_modules/jquery'
+    'markdown':'node_modules/markdown',
+    
   };
   // packages tells the System loader how to load when no filename and/or no extension
   var packages = {
     'app': { main: 'main.js', defaultExtension: 'js' },
     'rxjs': { defaultExtension: 'js' },
     'angular2-in-memory-web-api': { main: 'index.js', defaultExtension: 'js' },
-    'jquery':{main:'src/jquery.js',defaultExtension:'js'}
+    'markdown':{main:'lib/index',defaultExtension:'js'},
+    'lib/util':{main:'index',defaultExtension:'js'},    
   };
   var ngPackageNames = [
     'common',
@@ -30,9 +32,11 @@
     'router-deprecated',
     'upgrade',
   ];
+  
   // Individual files (~300 requests):
   function packIndex(pkgName) {
     packages['@angular/' + pkgName] = { main: 'index.js', defaultExtension: 'js' };
+    
   }
   // Bundled (~40 requests):
   function packUmd(pkgName) {
@@ -42,9 +46,13 @@
   var setPackageConfig = System.packageWithIndex ? packIndex : packUmd;
   // Add package entries for angular packages
   ngPackageNames.forEach(setPackageConfig);
+  
+
+
   var config = {
     map: map,
-    packages: packages
+    packages: packages,
+    defaultExtension:'js'
   };
   System.config(config);
 })(this);

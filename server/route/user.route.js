@@ -3,9 +3,6 @@ var Express = require('express');
 var user_model_1 = require('../model/user.model');
 var EmployeeRoute = Express.Router();
 exports.EmployeeRoute = EmployeeRoute;
-/**
- * try parse Int
- */
 EmployeeRoute.all('/:action', function (req, res, next) {
     // console.log(req.params['action']);
     switch (req.params['action']) {
@@ -46,7 +43,7 @@ var doAction = {
     signUp: function (req, res) {
         res.json({
             issuccess: true,
-            data: { userid: req.body.userid, passowrd: req.body.password }
+            data: { userid: req['body'].userid, passowrd: req['body'].password }
         });
     }
 };

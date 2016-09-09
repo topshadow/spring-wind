@@ -1,9 +1,11 @@
 /// <reference path="../typings/index.d.ts" />
 import express from './express';
 import mysql from './config/mysql.config';
-var app = express();
-app.set('port',process.env.PORT ||3000);
+// import  * as io  from 'socket.io';
 
-app.listen(app.get('port'),()=>{
-  console.log(`server is listening on:${app.get('port')}`);
+var app = express();
+
+
+app.listen(process.env.PORT||3000,()=>{
+  console.log(`server is listening on:3000`);
 });
