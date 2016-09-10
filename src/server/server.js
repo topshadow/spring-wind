@@ -1,5 +1,5 @@
 "use strict";
-/// <reference path="../typings/index.d.ts" />
+/// <reference path="../../typings/index.d.ts" />
 var express_1 = require('./express');
 // import  * as io  from 'socket.io';
 var app = express_1.default();
