@@ -6,30 +6,30 @@ export class Queue<T> {
         this.items=[];
     }
 
-    enqueue(element){
+    public enqueue(element:T):void{
             this.items.push(element);
     }
 
-    dequeue():T{
+   public  dequeue():T{
         return this.items.shift();
     }
 
-    front():T{
+   public  front():T{
         return this.items[0];
     }
 
-    isEmpty():boolean{
+    public isEmpty():boolean{
         return this.items.length == 0;
     }
 
-    clear(){
+    public clear(){
         this.items=[];
     }
-    size():number{
+    public size():number{
         return this.items.length;
     }
 
-    toString():string{
+    public toString():string{
         return this.items.toString();
     }
     
